@@ -32,6 +32,39 @@ console.log(guys);
 names.splice(2, 1);
 console.log(names);
 
+names.splice(1, 1, "Ben");
+console.log(names);
+
+//Exercise
+let fruits = ["Apple", "Banana", "Cherry", "Date", "Elderberry", "Fig", "Grape"];
+
+console.log(fruits[0]);
+console.log(fruits[fruits.length - 1]);
+
+let x = fruits.indexOf("Banana");
+fruits[x] = "Kiwi";
+fruits.pop();
+fruits.unshift("Mango");
+
+for (let i = 0; i < fruits.length; i++) {
+  console.log("Fruit " + (i + 1) + ": " + fruits[i]);
+}
+
+let check = fruits.includes("Orange");
+if (check === true) {
+  console.log("Orange is in the array at index " + fruits.indexOf("Orange"));
+} else {
+  console.log("Orange is not in the array.");
+}
+
+let middle = fruits.length / 2;
+if (fruits.length % 2 === 0) {
+  middle = [fruits[middle - 1], fruits[middle]];
+} else {
+  middle = fruits[middle];
+}
+
+console.log(middle);
 
 function setup() {
 	createCanvas(500, 500);
