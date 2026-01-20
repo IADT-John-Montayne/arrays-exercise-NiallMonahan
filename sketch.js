@@ -61,7 +61,7 @@ let middle = fruits.length / 2;
 if (fruits.length % 2 === 0) {
   middle = [fruits[middle + 1], fruits[middle]];
 } else {
-   const midIndex = Math.floor(fruits.length / 2);
+   const midIndex = Math.ceil(fruits.length / 2);
   middle = fruits[midIndex];
 }
 
