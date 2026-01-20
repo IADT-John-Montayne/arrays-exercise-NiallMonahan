@@ -36,7 +36,7 @@ names.splice(1, 1, "Ben");
 console.log(names);
 
 //Exercise
-let fruits = ["Apple", "Banana", "Cherry", "Date", "Elderberry", "Fig", "Grape"];
+let fruits = ["Apple", "Banana", "Cherry", "Date", "Elderberry", "Fig", "Grape", "Honeydew"];
 
 console.log(fruits[0]);
 console.log(fruits[fruits.length - 1]);
@@ -59,12 +59,15 @@ if (check === true) {
 
 let middle = fruits.length / 2;
 if (fruits.length % 2 === 0) {
-  middle = [fruits[middle - 1], fruits[middle]];
+  middle = [fruits[middle + 1], fruits[middle]];
 } else {
-  middle = fruits[middle];
+   const midIndex = Math.floor(fruits.length / 2);
+  middle = fruits[midIndex];
 }
 
-console.log(middle);
+
+citrus = middle;
+console.log(citrus);
 
 function setup() {
 	createCanvas(500, 500);
