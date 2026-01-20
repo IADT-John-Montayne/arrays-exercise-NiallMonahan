@@ -24,6 +24,15 @@ for (let i = 0; i < names.length; i++) {
   console.log(names[i]);
 }
 
+console.log(names.indexOf("Charlie"));
+
+let guys = names.slice(1, 3);
+console.log(guys);
+
+names.splice(2, 1);
+console.log(names);
+
+
 function setup() {
 	createCanvas(500, 500);
 	background(55);
